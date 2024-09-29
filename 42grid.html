@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex direction</title>
+  <style>
+    #container{height: 600px;width: 1000px;;margin:5px;border:5px solid rgba(0, 4, 255, 0.836);padding: 10px;background-color: rgb(205, 255, 245);display: grid;justify-content: center;grid-template-rows:50px 100px;grid-template-columns: 50px 100px;}
+   
+    .grow{height: 300px;width: 200px;background-color: black;border: 5px solid blue;margin:5px;flex-direction: column-reverse;text-align: center;;}
+  
+    #karn{text-align: center;}
+    #grow1{flex-grow:1;
+    grid-column: 1/2;
+    grid-row: 1/2;}
+    #grow2{grid-column: 1/2;
+    grid-row: 2/2;}
+    grow
+    #grow2{grid-column: 2/2;
+    grid-row: 1/2;}
+    
+    #grow2{grid-column: 2/2;
+    grid-row: 2/2;}
+    
+  </style>
+</head>
+<body>
+  <header><h1 id="karn">karnx</h1></header>
+  <div id="container">
+  <div id="grow1" class="grow">karn1</div>
+  <div id="grow2" class="grow">karn2</div>
+  <div id="grow3" class="grow">karn3</div>
+  <div id="grow4" class="grow">karn4</div>
+  <div id="grow5" class="grow">karn3</div>
+  </div> 
+</body>
+</html>
